@@ -6,16 +6,16 @@ public class CameraScript : MonoBehaviour {
 
     public GameObject santa;
     public float camSpeed;
-    Vector3 camPos;
+    public float maxY;
 
-	void Start ()
+    private void Start()
     {
-        camPos = transform.position;
+        cam = GetComponent<Camera>();    
     }
-	
-	void Update ()
+
+    void Update ()
     {
-        MoveCamera();
+        MoveCamera();        
 	}
 
     void MoveCamera()
