@@ -31,10 +31,11 @@ public class SantaScript : MonoBehaviour {
 
         transform.Translate(Vector2.down * speed * Time.deltaTime);
 
-        transform.Rotate(0, 0, rotateSpeed);
+        transform.Rotate(0, -rotateSpeed, rotateSpeed);
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Present"))
         {
