@@ -25,7 +25,7 @@ public class SpawnPresents : MonoBehaviour {
         for (int i = 0; i < numberOfPresents; i++)
         {
             Vector2 randomLocation = new Vector2(Random.Range(-randomRange, randomRange), -distanceBetweenPresents);
-            GameObject presentClone = Instantiate(present, new Vector2(randomLocation.x, randomLocation.y * i), Quaternion.identity);
+            GameObject presentClone = Instantiate(present, new Vector2(randomLocation.x, randomLocation.y * i), Quaternion.Euler(30, 180, 0));
         }
     }
 }
