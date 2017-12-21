@@ -16,16 +16,16 @@ public class EventSystemChecker : MonoBehaviour
     // This used to be OnLevelWasLoaded (now deprecated). It is registered as a callback on Scene Load in the
     // SceneManager in the function above.
     static public void SceneWasLoaded(Scene scene, LoadSceneMode mode)
-	{
-		//If there is no EventSystem (needed for UI interactivity) present
-		if(!FindObjectOfType<EventSystem>())
-		{
-			//The following code instantiates a new object called EventSystem
-			GameObject obj = new GameObject("EventSystem");
+    {
+        //If there is no EventSystem (needed for UI interactivity) present
+        if (!FindObjectOfType<EventSystem>())
+        {
+            //The following code instantiates a new object called EventSystem
+            GameObject obj = new GameObject("EventSystem");
 
-			//And adds the required components
-			obj.AddComponent<EventSystem>();
-			obj.AddComponent<StandaloneInputModule>().forceModuleActive = true;
-		}
-	}
+            //And adds the required components
+            obj.AddComponent<EventSystem>();
+            obj.AddComponent<StandaloneInputModule>().forceModuleActive = true;
+        }
+    }
 }
