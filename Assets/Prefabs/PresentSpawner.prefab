@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4288868414771370}
   - component: {fileID: 114028142691273262}
+  - component: {fileID: 114768269132890832}
   m_Layer: 0
   m_Name: PresentSpawner
   m_TagString: Untagged
@@ -55,3 +56,18 @@ MonoBehaviour:
   numberOfPresents: 10
   randomRange: 2
   distanceBetweenPresents: 5
+--- !u!114 &114768269132890832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143551777396730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abeafae68a34a8e40859ca6d7b42b5d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstaclePool: {fileID: 0}
+  minSpawnPos: {fileID: 0}
+  maxSpawnPos: {fileID: 0}
+  obstacleSpawnInterval: 5
