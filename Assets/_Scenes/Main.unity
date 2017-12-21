@@ -691,6 +691,25 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 2129726059}
+    - target: {fileID: 50641004360309894, guid: 6b106ecd923d9b24eb67cb5de3e1e0bb,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114992917709285596, guid: 6b106ecd923d9b24eb67cb5de3e1e0bb,
+        type: 2}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 50641004360309894, guid: 6b106ecd923d9b24eb67cb5de3e1e0bb,
+        type: 2}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511327849682852, guid: 6b106ecd923d9b24eb67cb5de3e1e0bb, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b106ecd923d9b24eb67cb5de3e1e0bb, type: 2}
   m_IsPrefabParent: 0

@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SantaScript : MonoBehaviour {
 
     public float speed;
     private float rotateSpeed = 1;
+
+    public ShowPanels showPanel;
 
     public Text scoreText;
     public int score;
@@ -37,6 +40,10 @@ public class SantaScript : MonoBehaviour {
         {
             Destroy(collision.gameObject);
             score += 1;
+        }
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 

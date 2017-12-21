@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Santa
   - Present
+  - Collision1
+  - Collision2
+  - Obstacle
   layers:
   - Default
   - TransparentFX

@@ -13,19 +13,10 @@ public class Obstacles : MonoBehaviour {
         deletePoint = cam.transform.GetChild(2);
     }
 
-
     // Update is called once per frame
     void Update()
     {
        DisableGameObject();
-    }
-
-    public void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "Player")
-        {
-            Debug.Log("you lose");
-        }
     }
 
     public void DisableGameObject()
