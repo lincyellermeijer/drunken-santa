@@ -5,21 +5,9 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour {
 
     public GameObject santa;
-    public float camSpeed;
-    public float maxY;
 
-    private void Start()
+    void Update()
     {
-        cam = GetComponent<Camera>();    
-    }
-
-    void Update ()
-    {
-        MoveCamera();        
-	}
-
-    void MoveCamera()
-    {
-        transform.Translate(Vector2.down * camSpeed * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, santa.transform.position.y - 2, transform.position.z);
     }
 }
