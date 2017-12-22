@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd3a16d4d2bd794b945ade6beb0afc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  present: {fileID: 1800199217115574, guid: 2eeff721bd5064742a9b7b830a5d5e9a, type: 2}
+  present: {fileID: 1251567251927362, guid: ae55538d8812cfe4eabba6871c9ee305, type: 2}
   numberOfPresents: 10
   randomRange: 2
   distanceBetweenPresents: 5

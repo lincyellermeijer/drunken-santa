@@ -44,7 +44,7 @@ public class SpawnManager : MonoBehaviour {
         spawnPosition = new Vector3( Random.Range(minSpawnPos.position.x, maxSpawnPos.position.x), minSpawnPos.position.y, 1);
         GameObject newItem = pool.GetPooledObject();
         newItem.transform.position = spawnPosition;
-        newItem.transform.rotation = transform.rotation;
+        newItem.transform.rotation = Quaternion.Euler(30, 180, 0);
         newItem.SetActive(true);
     }
 }

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Border : MonoBehaviour {
 
-    public void OnTriggerEnter2D(Collider2D col)
+    public void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Santa")
         {
             Debug.Log("you lose");
         }

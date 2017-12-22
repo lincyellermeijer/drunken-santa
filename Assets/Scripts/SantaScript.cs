@@ -44,7 +44,8 @@ public class SantaScript : MonoBehaviour {
         }
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            SceneManager.LoadScene("GameOver");
+            Debug.Log("you lose");
+            //SceneManager.LoadScene("GameOver");
         }
     }
 
