@@ -43,6 +43,10 @@ public class SantaScript : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+        if (collision.gameObject.CompareTag("House"))
+        {
+            SceneManager.LoadScene("Win");
+        }
     }
 
     private void OnGUI()

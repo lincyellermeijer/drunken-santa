@@ -35,6 +35,9 @@ public class PlayMusic : MonoBehaviour
             case 2:
                 musicSource.clip = titleMusic;
                 break;
+            case 3:
+                musicSource.clip = titleMusic;
+                break;
         }
         //Fade up the volume very quickly, over resetTime seconds (.01 by default)
         FadeUp(resetTime);
