@@ -11,6 +11,8 @@ public class SantaScript : MonoBehaviour
     public Text scoreText;
     public int score;
 
+    public GameObject particles;
+
     int maxRotation = 90;
     int minRotation = -90;
 
@@ -47,6 +49,8 @@ public class SantaScript : MonoBehaviour
         {
             SceneManager.LoadScene("Win");
         }
+
+        GameObject particleClone = Instantiate(particles, transform.position, Quaternion.identity);
     }
 
     private void OnGUI()
