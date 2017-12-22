@@ -283,34 +283,6 @@ Prefab:
     - {fileID: 114383019722975732, guid: 568f9a1d8cc517f4cab0ebb101dea557, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 568f9a1d8cc517f4cab0ebb101dea557, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &363157344
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 363157345}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &363157345
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 363157344}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -5.67, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &432526324
 Prefab:
   m_ObjectHideFlags: 0
@@ -494,34 +466,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4063363262026326, guid: 568f9a1d8cc517f4cab0ebb101dea557,
     type: 2}
   m_PrefabInternal: {fileID: 1388044390}
---- !u!1 &891886531
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 891886532}
-  m_Layer: 0
-  m_Name: spawnHouse
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &891886532
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 891886531}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -4.94, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &926705400 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4063363262026326, guid: 568f9a1d8cc517f4cab0ebb101dea557,
@@ -1230,7 +1174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   santa: {fileID: 1718755092}
   house: {fileID: 1680860680401118, guid: 35535dd62cc191a4dad6d4526a163352, type: 2}
-  scoreNeeded: 5
+  scoreNeeded: 20
+  minSpawnPos: {fileID: 1647732402}
 --- !u!4 &1695850758
 Transform:
   m_ObjectHideFlags: 0
