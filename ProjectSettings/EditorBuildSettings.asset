@@ -15,8 +15,11 @@ EditorBuildSettings:
     path: 
     guid: 3a93b55863253534b9a324bb0c676f5e
   - enabled: 0
-    path: Assets/_Scenes/Win.unity
+    path: 
     guid: 17b74b9972e7cb845a274f60a14d24ef
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/d1f396c20a080d74abf7701c0d77f094
+    path: 
     guid: d1f396c20a080d74abf7701c0d77f094
+  - enabled: 1
+    path: Assets/_Scenes/GameOver.unity
+    guid: 7342f7c7f6852334ba7a705f67cba549

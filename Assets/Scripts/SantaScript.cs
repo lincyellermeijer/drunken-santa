@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SantaScript : MonoBehaviour {
-
+public class SantaScript : MonoBehaviour
+{
     public float speed;
     private float rotateSpeed = 1;
     public Text scoreText;
@@ -13,11 +13,11 @@ public class SantaScript : MonoBehaviour {
 
     int maxRotation = 90;
     int minRotation = -90;
-	
-	void Update ()
+
+    void Update()
     {
         Move();
-	}
+    }
 
     void Move()
     {
@@ -41,13 +41,12 @@ public class SantaScript : MonoBehaviour {
         }
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            Debug.Log("you lose");
-            //SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
     private void OnGUI()
     {
-        scoreText.text = "" + score;
+        scoreText.text = "Score: " + score;
     }
 }

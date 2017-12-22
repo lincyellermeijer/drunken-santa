@@ -41,14 +41,11 @@ GameObject:
   - component: {fileID: 114796001501803992}
   - component: {fileID: 114980010317317584}
   - component: {fileID: 225089098984841808}
-  - component: {fileID: 114854191265191504}
   - component: {fileID: 114956145520480212}
-  - component: {fileID: 114672838392976456}
   - component: {fileID: 114426211715517052}
   - component: {fileID: 114557777648705098}
   - component: {fileID: 82875586808658010}
   - component: {fileID: 114019207304910524}
-  - component: {fileID: 114767680012916890}
   - component: {fileID: 114856470664325650}
   - component: {fileID: 82761470653056272}
   m_Layer: 5
@@ -620,35 +617,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114672838392976456
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1151160222691284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1516183e9649424d8f8adc54f1f0824, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showPanels: {fileID: 0}
-  isPaused: 0
-  startScript: {fileID: 0}
---- !u!114 &114767680012916890
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1151160222691284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a7723679572e4ade879f5906cde74eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  optionsPanel: {fileID: 0}
-  optionsTint: {fileID: 0}
-  menuPanel: {fileID: 1715927152347702}
-  pausePanel: {fileID: 0}
 --- !u!114 &114796001501803992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -670,17 +638,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114854191265191504
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1151160222691284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9623e989f1af0480990a4cc5c3928663, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114856470664325650
 MonoBehaviour:
   m_ObjectHideFlags: 1
