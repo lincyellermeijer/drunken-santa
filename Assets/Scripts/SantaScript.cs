@@ -21,7 +21,7 @@ public class SantaScript : MonoBehaviour
 
     void Move()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
             rotateSpeed *= -1;
         }
