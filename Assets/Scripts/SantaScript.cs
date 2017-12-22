@@ -8,9 +8,6 @@ public class SantaScript : MonoBehaviour {
 
     public float speed;
     private float rotateSpeed = 1;
-
-    public ShowPanels showPanel;
-
     public Text scoreText;
     public int score;
 

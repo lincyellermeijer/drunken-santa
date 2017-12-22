@@ -9,6 +9,7 @@ public class StartOptions : MonoBehaviour
     public int sceneToStart = 1;                                        //Index number in build settings of scene to load if changeScenes is true
     public bool changeScenes;                                           //If true, load a new scene when Start is pressed, if false, fade out UI and continue in single scene
     public bool changeMusicOnStart;                                     //Choose whether to continue playing menu music or start a new music clip
+    public GameObject menuPanel;							            //Store a reference to the Game Object MenuPanel 
 
     [HideInInspector] public bool inMainMenu = true;                    //If true, pause button disabled in main menu (Cancel in input manager, default escape key)
     [HideInInspector] public Animator animColorFade;                    //Reference to animator which will fade to and from black when starting game.
@@ -18,13 +19,9 @@ public class StartOptions : MonoBehaviour
 
     private PlayMusic playMusic;                                        //Reference to PlayMusic script
     private float fastFadeIn = .01f;                                    //Very short fade time (10 milliseconds) to start playing music immediately without a click/glitch
-    private ShowPanels showPanels;                                      //Reference to ShowPanels script on UI GameObject, to show and hide panels
 
     void Awake()
     {
-        //Get a reference to ShowPanels attached to UI object
-        showPanels = GetComponent<ShowPanels>();
-
         //Get a reference to PlayMusic attached to UI object
         playMusic = GetComponent<PlayMusic>();
     }
@@ -58,6 +55,18 @@ public class StartOptions : MonoBehaviour
 
     }
 
+    //Call this function to activate and display the main menu panel during the main menu
+    public void ShowMenu()
+    {
+        menuPanel.SetActive(true);
+    }
+
+    //Call this function to deactivate and hide the main menu panel during the main menu
+    public void HideMenu()
+    {
+        menuPanel.SetActive(false);
+    }
+
     void OnEnable()
     {
         SceneManager.sceneLoaded += SceneWasLoaded;
@@ -84,7 +93,7 @@ public class StartOptions : MonoBehaviour
         inMainMenu = false;
 
         //Hide the main menu UI element
-        showPanels.HideMenu();
+        HideMenu();
 
         //Load the selected scene, by scene index number in build settings
         SceneManager.LoadScene(sceneToStart);
@@ -93,7 +102,7 @@ public class StartOptions : MonoBehaviour
     public void HideDelayed()
     {
         //Hide the main menu UI element after fading out menu for start game in scene
-        showPanels.HideMenu();
+        HideMenu();
     }
 
     public void StartGameInScene()
